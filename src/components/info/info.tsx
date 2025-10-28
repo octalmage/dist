@@ -46,7 +46,7 @@ export const Info = ({ isDownload }: { isDownload?: boolean }): React.JSX.Elemen
   // Classes and styles
   const iconContainerClass = 'mr3 fill-aqua'
   const labelClass = 'f4 fw1 mb2 ml1 white montserrat'
-  const descriptionClass = 'f6 ml1 gray-muted lh-copy'
+  const descriptionClass = 'f6 ml1 gray-muted lh-copy highlight-text'
   const anchorClass = 'no-underline underline-hover aqua bg-transparent pointer bn pa0'
   const anchorStyle = { outline: 'none' }
   // Links
@@ -60,8 +60,8 @@ export const Info = ({ isDownload }: { isDownload?: boolean }): React.JSX.Elemen
   // Info for the Download page
   if (isDownload === true) {
     return (
-      <div>
-        <div className='pr5-l w-100 w-two-thirds-l mw7-l'>
+      <div className='w-100'>
+        <div className='pr5-l w-100 w-two-thirds-l'>
           <div className='mv4 mv2-l flex flex-column'>
             <div className='flex items-center'>
               <div className={iconContainerClass}>
@@ -123,7 +123,7 @@ export const Info = ({ isDownload }: { isDownload?: boolean }): React.JSX.Elemen
   // Info for the Add page
   return (
     <div>
-      <div className='pr5-l w-100 w-two-thirds-l mw7-l'>
+      <div className='pr5-l w-100'>
         <div className='mv4 mv2-l flex flex-column'>
           <div className='flex items-center'>
             <div className={iconContainerClass}>

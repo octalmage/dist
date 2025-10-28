@@ -13,7 +13,7 @@ import { ShareAllFiles } from '../share-all-files/share-all-files.jsx'
 export const Box = forwardRef<HTMLDivElement, { children: any, className?: string }>((props, ref) => {
   const { children, className } = props
   return (
-    <div ref={ref} className={classNames('center ml0-l mb4 mt2-l mb0-l pa4 w-100 w-third-l mw6 order-2-l br3 shadow-4 bg-white', className)}>
+    <div ref={ref} className={classNames('center mb4 pa4 w-100 br2 ba b--black-10', className)} style={{ backgroundColor: '#1c1c1c' }}>
       { children }
     </div>
   )

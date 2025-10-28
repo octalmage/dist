@@ -1,6 +1,6 @@
 {
-  "short_name": "IPFS Share",
-  "name": "IPFS Share",
+  "short_name": "o8 dist",
+  "name": "o8 dist",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#022E44",
-  "background_color": "#022E44",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "start_url": "/",
   "display": "standalone"
 }

@@ -1,10 +1,10 @@
 {
   "pageTitle": {
-    "ipfs": "IPFS Share",
-    "add": "Share Files",
-    "download": "Download Files"
+    "ipfs": "o8 dist",
+    "add": "share code",
+    "download": "view code"
   },
-  "header": "Share",
+  "header": "Dist",
   "footer": "Licensed <1>CC-BY 3.0</1> except as <3>noted</3>",
   "powered-by-helia": "Powered by <1>Helia</1>",
   "info": {

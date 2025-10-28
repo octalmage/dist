@@ -72,27 +72,6 @@ export const ShareAllFiles = ({ withLabel }: { withLabel?: boolean }): React.Rea
           </div>
         </CopyToClipboard>
       </div>
-      <div className="overflow-hidden">
-        <div className="flex flex-column items-center mb3 appear-from-below">
-          <span className="f7 charcoal-muted lh-copy pb2">{t('copyLink.qrLabel')}</span>
-          <span style={ disabled ? { filter: 'blur(2px)' } : {} }>
-            <QRCodeSVG
-              value={shareAllLink}
-              bgColor={'#ffffff'}
-              fgColor={'#022E44'}
-              level={'M'}
-              imageSettings={{
-                src: 'favicon-32x32.png',
-                x: 50,
-                y: 50,
-                height: 32,
-                width: 32,
-                excavate: true
-              }}
-            />
-          </span>
-        </div>
-      </div>
     </div>
   )
 }

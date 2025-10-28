@@ -528,9 +528,9 @@ export const FilesProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             }
           })
         }
-        // TODO: dispatch a new action to update the state to indicate the file won't be provided to the DHT?
         dispatch({ type: 'publish_success', cid })
       } catch (error: any) {
+        console.error('error publishing file:', error)
         dispatch({ type: 'publish_fail', cid, error })
       }
     }

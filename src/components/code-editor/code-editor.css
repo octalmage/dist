@@ -1,0 +1,106 @@
+.code-editor-container {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.code-editor-toolbar {
+  background: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.75rem;
+}
+
+.code-editor-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.code-editor-filename {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
+  background: white;
+}
+
+.code-editor-filename:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+}
+
+.code-editor-language-select {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.code-editor-language-select:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+}
+
+.code-editor-theme-toggle {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.code-editor-theme-toggle:hover {
+  background: #f3f4f6;
+  border-color: #0969da;
+}
+
+.code-editor-theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.code-editor-wrapper {
+  background: #1e1e1e;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .code-editor-container {
+    background: #0d1117;
+    border-color: #30363d;
+  }
+
+  .code-editor-toolbar {
+    background: #161b22;
+    border-bottom-color: #30363d;
+  }
+
+  .code-editor-filename,
+  .code-editor-language-select,
+  .code-editor-theme-toggle {
+    background: #0d1117;
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+
+  .code-editor-filename:focus,
+  .code-editor-language-select:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+  }
+
+  .code-editor-theme-toggle:hover {
+    background: #161b22;
+    border-color: #58a6ff;
+  }
+}

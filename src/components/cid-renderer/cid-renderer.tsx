@@ -2,6 +2,7 @@ import { type UnixFS } from '@helia/unixfs'
 import React, { useEffect } from 'react'
 import { type FileState } from '../../providers/files-provider'
 import { asyncItToFile } from '../file/utils/async-it-to-file'
+import { MarkdownViewer } from '../markdown-viewer/markdown-viewer'
 
 export interface CidRendererProps {
   // cid: string
@@ -56,6 +57,13 @@ export const CidRenderer: React.FC<CidRendererProps> = ({ file, unixfs }: CidRen
     return <img src={URL.createObjectURL(blob)} alt={file.name} />
   }
   if (contentType?.startsWith('text/') === true && blob != null) {
+    // Check if it's a markdown file
+    const isMarkdown = file.name.toLowerCase().endsWith('.md') || file.name.toLowerCase().endsWith('.markdown')
+
+    if (isMarkdown) {
+      return <MarkdownViewer content={text} filename={file.name} />
+    }
+
     return <pre>{text}</pre>
   }
   return <span>Not a supported content-type of <pre>{contentType}</pre></span>

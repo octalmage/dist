@@ -135,7 +135,7 @@ export const File = ({ file, isDownload }: { file: FileState, isDownload?: boole
     )
   }, [isDownload, copied, disabled, t])
 
-  const fileNameClass = classnames({ charcoal: error == null, gray: error }, ['FileLinkName ph2 f6 b truncate'])
+  const fileNameClass = classnames({ white: error == null, gray: error }, ['FileLinkName ph2 f6 b truncate'])
   const fileSizeClass = classnames({ 'charcoal-muted': error == null, gray: error }, ['f6'])
 
   const url = getShareLink({ cid, name, webrtcMaddrs: getWebRTCAddrs(nodeInfo?.multiaddrs) })

@@ -7,7 +7,7 @@ import Loader from '../loader/loader.jsx'
 export const FileTree = ({ isDownload }: { isDownload?: boolean }): React.ReactNode => {
   const { t } = useTranslation()
   const { files } = useFiles()
-  const filesMap = Object.entries(files)
+  const filesMap = Object.entries(files).reverse()
 
   if (isDownload === true && filesMap.length === 0) {
     return <Loader text={t('loader.fileList')} />
