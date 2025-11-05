@@ -74,3 +74,4 @@ dist
 src/icons
 aegir-build
 .coverage
+.firebase
